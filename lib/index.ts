@@ -43,7 +43,7 @@ export default {
         const directiveName = name || DEFAULT_DIRECTIVE_NAME
 
         app.directive(directiveName, {
-            mounted(el, binding /** , vnode, prevVnode */) {
+            bind(el: any, binding: any /** , vnode, prevVnode */) {
                 const { arg = '', value = [] } = binding
 
                 // 测试指令值是否在测试序列中
@@ -63,6 +63,6 @@ export default {
                 }
                 test(provide(arg))
             }
-        })
+        } as any)
     }
 }

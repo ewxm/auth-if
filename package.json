@@ -1,6 +1,6 @@
 {
   "name": "auth-if",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "基于权限可配置的Vue条件渲染指令",
   "repository": {
     "type": "git",
