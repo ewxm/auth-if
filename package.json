@@ -1,0 +1,44 @@
+{
+  "name": "auth-if",
+  "version": "1.0.0",
+  "description": "基于权限可配置的Vue条件渲染指令",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ewxm/auth-if.git"
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "auth-if"
+  ],
+  "author": "ewxm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ewxm/auth-if/issues"
+  },
+  "homepage": "https://github.com/ewxm/auth-if#readme",
+  "main": "./dist/auth-if.js",
+  "exports": {
+    ".": {
+      "import": "./dist/auth-if.js",
+      "require": "./dist/auth-if.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.9",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vue-tsc": "^1.8.5"
+  }
+}
